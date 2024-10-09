@@ -1,9 +1,7 @@
-import { Box, Container, SimpleGrid, Stack, useColorModeValue, Text, chakra, VisuallyHidden, Heading } from '@chakra-ui/react'
-import { ReactNode } from 'react'
+import { Box, Container, Heading, SimpleGrid, Stack, Text, useColorModeValue } from '@chakra-ui/react';
 import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import storebadge from "../assets/appstorimg.svg";
 import gplaybadge from "../assets/playstoreimg.png";
-import Header from './Header';
 
 const Footer = () => {
   return (

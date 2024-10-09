@@ -1,36 +1,35 @@
-import { Box, Button, Container, Heading, HStack, IconButton, Input, List, ListIcon, ListItem, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Select, Stack, Text, useDisclosure, VStack } from "@chakra-ui/react";
-import img1 from '../assets/bg-02-free-img.jpg';
-import img2 from '../assets/img-08-a.jpg';
-import img3 from '../assets/slide-02.jpg.webp';
-import img4 from '../assets/slide-03.jpg.webp'
 import { ArrowForwardIcon, SmallCloseIcon } from "@chakra-ui/icons";
+import { Box, Button, Container, Heading, HStack, IconButton, Input, List, ListItem, Modal, ModalBody, ModalCloseButton, ModalContent, Select, Stack, Text, useDisclosure, VStack } from "@chakra-ui/react";
+import { useState } from "react";
+import { CiHeart } from "react-icons/ci";
+import { FiMinus, FiPlus } from "react-icons/fi";
+import { IoMdSearch } from "react-icons/io";
+import { IoFilter } from "react-icons/io5";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { IoFilter } from "react-icons/io5";
-import { useState } from "react";
-import { IoMdSearch } from "react-icons/io";
+import img1 from '../assets/bg-02-free-img.jpg';
+import img2 from '../assets/img-08-a.jpg';
 import prodimg1 from "../assets/product-01.jpg.webp";
 import prodimg2 from "../assets/product-02.jpg.webp";
 import prodimg3 from "../assets/product-03.jpg.webp";
-import prodimg4 from "../assets/product-04.jpg.webp"
-import prodimg5 from "../assets/product-05.jpg.webp"
-import prodimg6 from "../assets/product-06.jpg.webp"
-import prodimg7 from "../assets/product-07.jpg.webp"
-import prodimg8 from "../assets/product-08.jpg.webp"
-import prodimg9 from "../assets/product-09.jpg.webp"
-import prodimg10 from "../assets/product-10.jpg.webp"
-import prodimg11 from "../assets/product-11.jpg.webp"
-import prodimg12 from "../assets/product-12.jpg.webp"
-import prodimg13 from "../assets/product-13.jpg.webp"
-import prodimg14 from "../assets/product-14.jpg.webp"
-import prodimg15 from "../assets/product-15.jpg.webp"
-import prodimg16 from "../assets/product-16.jpg.webp"
-import banner1 from "./../assets/banner-01.jpg.webp"
-import banner2 from "./../assets/banner-02.jpg.webp"
-import banner3 from "./../assets/banner-03.jpg.webp"
-import { CiHeart } from "react-icons/ci";
-import { FiMinus, FiPlus } from "react-icons/fi";
-import React from "react";
+import prodimg4 from "../assets/product-04.jpg.webp";
+import prodimg5 from "../assets/product-05.jpg.webp";
+import prodimg6 from "../assets/product-06.jpg.webp";
+import prodimg7 from "../assets/product-07.jpg.webp";
+import prodimg8 from "../assets/product-08.jpg.webp";
+import prodimg9 from "../assets/product-09.jpg.webp";
+import prodimg10 from "../assets/product-10.jpg.webp";
+import prodimg11 from "../assets/product-11.jpg.webp";
+import prodimg12 from "../assets/product-12.jpg.webp";
+import prodimg13 from "../assets/product-13.jpg.webp";
+import prodimg14 from "../assets/product-14.jpg.webp";
+import prodimg15 from "../assets/product-15.jpg.webp";
+import prodimg16 from "../assets/product-16.jpg.webp";
+import img3 from '../assets/slide-02.jpg.webp';
+import img4 from '../assets/slide-03.jpg.webp';
+import banner1 from "./../assets/banner-01.jpg.webp";
+import banner2 from "./../assets/banner-02.jpg.webp";
+import banner3 from "./../assets/banner-03.jpg.webp";
 
 const Home = () => {
     const [filteredClick, setFilteredClicked] = useState(false);

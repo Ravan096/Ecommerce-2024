@@ -1,8 +1,8 @@
 import { Box, Container, Heading, Input, Stack, Text } from "@chakra-ui/react"
 import blogtile from '../assets/bg-02.jpg'
 import blogimg1 from '../assets/blog-04.jpg.webp'
-import blogimg2 from '../assets/blog-05.jpg.webp'
-import blogimg3 from '../assets/blog-06.jpg.webp'
+// import blogimg2 from '../assets/blog-05.jpg.webp'
+// import blogimg3 from '../assets/blog-06.jpg.webp'
 import { Link } from "react-router-dom"
 import { FaLongArrowAltRight } from "react-icons/fa"
 
